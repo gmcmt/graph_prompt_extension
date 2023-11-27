@@ -1,5 +1,4 @@
-An extension based on [**"GraphPrompt: Unifying Pre-Training and Downstream Tasks
-for Graph Neural Networks"**](https://arxiv.org/pdf/2302.08043.pdf)
+We provide the code (in pytorch) and datasets for our paper [**"Generalized Graph Prompt: Toward a Unification of Pre-Training and Downstream Tasks on Graphs"**](https://arxiv.org/pdf/2302.08043.pdf)
 
 ## Description
 - **data/**: contains data we use.
