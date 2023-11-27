@@ -1,0 +1,45 @@
+Load Few Shot
+--------------------------------------------------------------------------------------
+start task  0
+Traceback (most recent call last):
+  File "prompt_fewshot.py", line 569, in <module>
+    pre_train_model.load_state_dict(torch.load(os.path.join(save_pretrain_model_dir, 'best.pt')))
+  File "/home/xingtong/anaconda3/envs/dgl/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1483, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for GIN:
+	size mismatch for convs.0.apply_func.0.weight: copying a param with shape torch.Size([64, 18]) from checkpoint, the shape in current model is torch.Size([16, 64]).
+	size mismatch for convs.0.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for convs.0.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for convs.0.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for convs.1.apply_func.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for convs.1.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for convs.1.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for convs.1.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for convs.2.apply_func.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for convs.2.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for convs.2.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for convs.2.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.0.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.0.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.0.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.1.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.1.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.1.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.2.weight: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.2.running_mean: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for bns.2.running_var: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.0.apply_func.0.weight: copying a param with shape torch.Size([64, 18]) from checkpoint, the shape in current model is torch.Size([16, 64]).
+	size mismatch for g_net.0.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.0.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for g_net.0.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.1.apply_func.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for g_net.1.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.1.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for g_net.1.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.2.apply_func.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for g_net.2.apply_func.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for g_net.2.apply_func.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for g_net.2.apply_func.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
