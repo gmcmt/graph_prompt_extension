@@ -1,5 +1,5 @@
 We provide the code (in pytorch) and datasets for our paper [**"Generalized Graph Prompt: Toward a Unification of Pre-Training and Downstream Tasks on Graphs"**](https://arxiv.org/pdf/2302.08043.pdf),
-which is an extension of [**"GraphPrompt: Unifying Pre-Training and Downstream Tasks for Graph Neural Networks"**](https://dl.acm.org/doi/pdf/10.1145/3543507.3583386), accepted by the ACM Web Conference (WWW) 2023.
+which is an extension of [**"GraphPrompt: Unifying Pre-Training and Downstream Tasks for Graph Neural Networks"**](https://dl.acm.org/doi/pdf/10.1145/3543507.3583386) accepted by the ACM Web Conference (WWW) 2023.
 
 ## Description
 - **data/**: contains data we use.
